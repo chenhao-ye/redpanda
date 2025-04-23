@@ -164,3 +164,6 @@ test:lldb --test_timeout=3600
 test:lldb --strategy=TestRunner=local
 
 try-import %workspace%/user.bazelrc
+
+# Double check that tests don't conflict but running them 10 times in a row
+test --runs_per_test=10
