@@ -194,7 +194,6 @@ redpanda_cc_gtest(
         "remote_path_provider_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/cloud_storage",
         "//src/v/cloud_storage:topic_mount_manifest_path",
@@ -229,7 +228,6 @@ redpanda_cc_gtest(
         "topic_mount_handler_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/cloud_io/tests:s3_imposter",
         "//src/v/cloud_storage",
@@ -355,7 +353,6 @@ redpanda_cc_btest(
         "remote_file_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/bytes:iostream",
         "//src/v/cloud_io/tests:s3_imposter",
@@ -376,7 +373,6 @@ redpanda_cc_btest(
         "remote_segment_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/base",
         "//src/v/bytes:iobuf",
@@ -402,7 +398,6 @@ redpanda_cc_btest(
         "remote_partition_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/base",
         "//src/v/bytes:iobuf",
@@ -431,7 +426,6 @@ redpanda_cc_btest(
         "async_manifest_view_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/bytes:iostream",
         "//src/v/cloud_io/tests:s3_imposter",
@@ -453,7 +447,6 @@ redpanda_cc_btest(
         "anomalies_detector_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/bytes:iostream",
         "//src/v/cloud_storage",
@@ -476,7 +469,6 @@ redpanda_cc_gtest(
         "partition_manifest_downloader_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/bytes:iostream",
         "//src/v/bytes:streambuf",
@@ -498,7 +490,6 @@ redpanda_cc_gtest(
         "remote_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/base",
         "//src/v/bytes:iobuf",
@@ -528,7 +519,6 @@ redpanda_cc_gtest(
         "topic_manifest_downloader_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/bytes:iostream",
         "//src/v/bytes:streambuf",
@@ -550,7 +540,6 @@ redpanda_cc_gtest(
         "topic_namespace_override_recovery_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/cloud_io/tests:s3_imposter",
         "//src/v/cloud_storage",
@@ -578,7 +567,6 @@ redpanda_cc_btest(
         "remote_partition_fuzz_test.cc",
     ],
     cpu = 1,
-    tags = ["exclusive"],
     deps = [
         "//src/v/cloud_io/tests:s3_imposter",
         "//src/v/cloud_storage",
